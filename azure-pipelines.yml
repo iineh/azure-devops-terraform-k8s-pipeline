@@ -13,7 +13,8 @@ steps:
     secureFile: 'azure rsa.pub'
 
 - task: TerraformCLI@0
-  inputs: command: 'init'
+  inputs: 
+    command: 'init'
     workingDirectory: '$(System.DefaultWorkingDirectory)/configuration/iaac/azure'
     backendType: 'azurerm'
     backendServiceArm: 'azure-service-connection'
