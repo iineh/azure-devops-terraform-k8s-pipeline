@@ -2,7 +2,7 @@ trigger:
 - master
 
 pool:
-- vmlmage: 'ubuntu-latest'
+  vmlmage: 'ubuntu-latest'
 
 steps: 
 - script: echo K8S Terraform Azure!
